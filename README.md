@@ -1,38 +1,33 @@
 # Graph - Connected Components (Vietnamese + English)
 
-## Đề bài (Tiếng Việt)
+## Đề bài / Problem Statement
 Cho 1 đồ thị không có trọng số (vô hướng hoặc có hướng).
-
-1. Đếm số thành phần liên thông.
-2. Thành phần liên thông nào có số đỉnh nhiều nhất.
-3. Giả sử tên đỉnh là các số nguyên, hỏi có bao nhiêu thành phần liên thông có tổng giá trị các đỉnh là chẵn.
-4. Đếm số phần tử lẻ trong thành phần có tổng chẵn lớn nhất.
-
-## Problem Statement (English)
 Given an unweighted graph (undirected or directed).
 
-1. Count the number of connected components.
-2. Find which connected component(s) have the largest number of vertices.
-3. Assume vertex labels are integers. How many components have an even sum of vertex labels?
-4. Count the odd-labeled vertices in the component(s) with the largest even sum.
+1. Đếm số thành phần liên thông. / Count the number of connected components.
+2. Thành phần liên thông nào có số đỉnh nhiều nhất. / Find which connected component(s) have the largest number of vertices.
+3. Giả sử tên đỉnh là các số nguyên, hỏi có bao nhiêu thành phần liên thông có tổng giá trị các đỉnh là chẵn. / Assume vertex labels are integers. How many components have an even sum of vertex labels?
+4. Đếm số phần tử lẻ trong thành phần có tổng chẵn lớn nhất. / Count the odd-labeled vertices in the component(s) with the largest even sum.
 
 ---
 
-## Input format (Định dạng input)
+## Định dạng input / Input format
 File: `input.txt`
 
-- Dòng 1: `n m` (số đỉnh, số cạnh) | Line 1: `n m` (number of vertices, number of edges)
-- `m` dòng tiếp theo: mỗi dòng `u v` là một cạnh | Next `m` lines: each line `u v` is an edge
+- Dòng 1: `n m` (số đỉnh, số cạnh) / Line 1: `n m` (number of vertices, number of edges)
+- `m` dòng tiếp theo: mỗi dòng `u v` là một cạnh / Next `m` lines: each line `u v` is an edge
 
-Ghi chú | Note:
+Ghi chú / Note:
 - Code hiện tại mặc định **vô hướng** (undirected). Bạn có thể chuyển sang **có hướng** bằng cách đổi `DIRECTED = True` trong `main.py`.
+- The code is **undirected** by default. Switch to **directed** by setting `DIRECTED = True` in `main.py`.
 
-## Output (Kết quả in ra)
-Chương trình in ra 4 phần tương ứng với 4 câu hỏi, và mỗi dòng đều có cả tiếng Việt và tiếng Anh.
+## Kết quả in ra / Output
+Chương trình in ra 4 phần tương ứng với 4 câu hỏi.
+The program prints 4 parts corresponding to the 4 questions.
 
 ---
 
-## Run (Cách chạy)
+## Cách chạy / Run
 ```powershell
 cd "e:\Data\HUST\CTDL&GT\CK\Graph"
 python main.py
@@ -40,7 +35,7 @@ python main.py
 
 ---
 
-## Example (Ví dụ)
+## Ví dụ / Example
 ### Input (`input.txt`)
 ```text
 8 6
@@ -54,6 +49,7 @@ python main.py
 
 ### Output (mẫu / sample)
 (Thứ tự các đỉnh trong từng thành phần có thể khác nhau do thứ tự duyệt DFS.)
+(The order of vertices in each component may differ depending on DFS traversal order.)
 
 ```text
 Đã đọc dữ liệu thành công. (Read input successfully.)
